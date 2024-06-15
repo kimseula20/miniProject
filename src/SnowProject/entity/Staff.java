@@ -142,7 +142,7 @@ public class Staff {
   }
 
   public void writeTodaySalesClip() {
-    String filename = "src/project/week2/outputs/staff-sales.txt"; // 출력할 파일의 이름
+    String filename = "src/SnowProject/outputs/staff-sales.txt"; // 출력할 파일의 이름
 
     try (PrintWriter printWriter = new PrintWriter(new FileWriter(filename))) {
       for(SaleInfo saleInfo: saleInfoList){
@@ -155,7 +155,7 @@ public class Staff {
   }
 
   public void writeTodaySales() {
-    String filename= "src/project/week2/outputs/today-sales.txt";
+    String filename= "src/SnowProject/outputs/today-sales.txt";
 
     try (PrintWriter printWriter = new PrintWriter(new FileWriter(filename))) {
       printWriter.println("staff" + "|" + salesAmount);
@@ -165,7 +165,7 @@ public class Staff {
   }
 
   public void writeTodayStocks() {
-    String filename= "src/project/week2/outputs/nike-sneaker-stocks-2.txt";
+    String filename= "src/SnowProject/outputs/nike-sneaker-stocks-2.txt";
 
     try (PrintWriter printWriter = new PrintWriter(new FileWriter(filename))) {
       for(Map.Entry<String, Long> entry: sneakersStockMap.entrySet()){
